@@ -1,0 +1,43 @@
+2018-12-29 17:39:40.986 [main] INFO  com.course.Application - Starting Application on DESKTOP-08IDGDC with PID 19116 (D:\Springboot\AutoTest\Chapter114\target\classes started by Administrator in D:\Springboot\AutoTest)
+2018-12-29 17:39:41.014 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2018-12-29 17:39:42.652 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2018-12-29 17:39:42.719 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2018-12-29 17:39:42.855 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121ms. Found 8 repository interfaces.
+2018-12-29 17:39:43.218 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$85725ae0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-12-29 17:39:43.823 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2018-12-29 17:39:43.933 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2018-12-29 17:39:43.933 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2018-12-29 17:39:43.940 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin;";D:\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Python27;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Fiddler;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Tools\adb;;.]
+2018-12-29 17:39:44.134 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2018-12-29 17:39:44.135 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3001 ms
+2018-12-29 17:39:44.182 [main] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2018-12-29 17:39:44.186 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-12-29 17:39:44.186 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-12-29 17:39:44.186 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2018-12-29 17:39:44.187 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2018-12-29 17:39:44.407 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2018-12-29 17:39:45.390 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2018-12-29 17:39:45.479 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2018-12-29 17:39:45.688 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2018-12-29 17:39:45.689 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2018-12-29 17:39:46.144 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2018-12-29 17:39:46.496 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2018-12-29 17:39:50.438 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2018-12-29 17:39:52.627 [main] WARN  o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2018-12-29 17:39:52.947 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2018-12-29 17:39:53.149 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2018-12-29 17:39:53.187 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2018-12-29 17:39:53.209 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2018-12-29 17:39:53.219 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2018-12-29 17:39:53.480 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_1
+2018-12-29 17:39:53.486 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_2
+2018-12-29 17:39:53.491 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_3
+2018-12-29 17:39:53.497 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_4
+2018-12-29 17:39:53.503 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_5
+2018-12-29 17:39:53.580 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2018-12-29 17:39:53.597 [main] INFO  com.course.Application - Started Application in 13.228 seconds (JVM running for 15.469)
+2018-12-29 17:39:56.997 [http-nio-8085-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2018-12-29 17:39:56.997 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2018-12-29 17:39:57.008 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 11 ms

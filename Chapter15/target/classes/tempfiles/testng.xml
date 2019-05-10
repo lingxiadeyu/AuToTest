@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="后服务项目组接口测试">
+    <test name="测试用例">
+        <classes>
+            <class name="com.course.cases.TestSendVerificationCode">
+                <include name="getVerificationCode"/>
+            </class>
+            <class name="com.course.cases.TestDologin">
+                <include name="testdologintwo"/>
+            </class>
+            <class name="com.course.cases.TestgetMerchantList">
+                <include name="TestgetMerchantList"/>
+            </class>
+            <class name="com.course.cases.TestgetCarWashDetail">
+                <include name="testgetcarwashdetail"/>
+                <include name="testgetcarwashdetailtwo"/>
+            </class>
+            <class name="com.course.cases.TestLoad"/>
+            <class name="com.course.cases.TestCreate"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"/>
+    </listeners>
+</suite>

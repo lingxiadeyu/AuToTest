@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course.model">
+    <!--获取ImageUrl表中数据-->
+    <select id="GetImageUrlcase" parameterType="Integer" resultType="com.course.model.ImageUrl">
+            select id,url from image_url where id=#{id}
+    </select>
+    <select id="GetImageUrlnums" resultType="Integer">
+            select COUNT(*) from image_url
+    </select>
+
+    <select id="GetImageUrlList" parameterType="Map" resultType="Map">
+            select * from image_url limit #{pageNumber}, #{pageSize};
+    </select>
+
+    <insert id="addImageUrl" parameterType="com.course.model.BadImageUrl">
+        insert into bad_image_url(id,badImageurl)
+        values (#{id},#{badImageurl})
+    </insert>
+    <insert id="addImageUrltwo" parameterType="Map">
+        insert into bad_image_url(id,badImageurl)
+        values (#{id},#{badImageurl})
+    </insert>
+    <select id="getVerificationCode"  resultType="Integer">
+        select validate_code from ucenter.sms where phone='E0F0CBE063B51D4921105375B1321529' ORDER BY created_time DESC LIMIT 1;
+    </select>
+    <select id="getbsActivityImg" resultType="String">
+        select activity_img from bs_activity;
+    </select>
+    <select id="getmarchantid" parameterType="Integer" resultType="Integer">
+        select id from autosvc.cfw_shop where id=#{id};
+    </select>
+    <select id="getmerchatidAndname" resultType="com.course.model.Cfwshop">
+        select id,shop_name from autosvc.cfw_shop LIMIT 10;
+    </select>
+    <select id="createorder" parameterType="String" resultType="Integer" >
+        select COUNT(*) from order_center.order_info where order_id=#{order_id};
+    </select>
+    <select id="createpayorder" parameterType="String" resultType="Integer" >
+        select COUNT(*) from isc_pay.pay_order where pay_order_no=#{pay_order_no};
+    </select>
+<!--获取测试表girls的总条数-->
+    <select id="getUserCount" resultType="Integer">
+            select count(*) from girls
+    </select>
+
+
+
+</mapper>

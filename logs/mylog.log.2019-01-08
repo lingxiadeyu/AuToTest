@@ -1,0 +1,83 @@
+2019-01-07 22:49:25.839 [main] INFO  com.course.Application - Starting Application on DESKTOP-08IDGDC with PID 11284 (D:\Springboot\AutoTest\Chapter114\target\classes started by Administrator in D:\Springboot\AutoTest)
+2019-01-07 22:49:25.844 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-01-07 22:49:27.141 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-01-07 22:49:27.202 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-07 22:49:27.304 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95ms. Found 8 repository interfaces.
+2019-01-07 22:49:27.700 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80721246] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-07 22:49:28.052 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8085 (http)
+2019-01-07 22:49:28.067 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-07 22:49:28.067 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-01-07 22:49:28.075 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin;";D:\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Python27;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Fiddler;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Tools\adb;;.]
+2019-01-07 22:49:28.244 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-07 22:49:28.244 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2316 ms
+2019-01-07 22:49:28.276 [main] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-01-07 22:49:28.283 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-07 22:49:28.284 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-07 22:49:28.284 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-01-07 22:49:28.284 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-07 22:49:28.412 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-01-07 22:49:28.834 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-01-07 22:49:28.888 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-07 22:49:28.960 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-07 22:49:28.962 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-01-07 22:49:29.136 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-07 22:49:29.290 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-07 22:49:37.140 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-07 22:49:38.147 [main] WARN  o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-07 22:49:38.466 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-07 22:49:38.642 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-01-07 22:49:38.690 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-07 22:49:38.706 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-07 22:49:38.720 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-07 22:49:38.981 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_1
+2019-01-07 22:49:38.986 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_2
+2019-01-07 22:49:38.991 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_3
+2019-01-07 22:49:38.998 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_4
+2019-01-07 22:49:39.005 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_5
+2019-01-07 22:49:39.068 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8085 (http) with context path ''
+2019-01-07 22:49:39.071 [main] INFO  com.course.Application - Started Application in 13.796 seconds (JVM running for 15.519)
+2019-01-07 22:49:48.458 [http-nio-8085-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-01-07 22:49:48.458 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2019-01-07 22:49:48.471 [http-nio-8085-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2019-01-08 11:41:10.386 [main] INFO  com.course.Application - Starting Application on DESKTOP-08IDGDC with PID 9288 (D:\Springboot\AutoTest\Chapter114\target\classes started by Administrator in D:\Springboot\AutoTest)
+2019-01-08 11:41:10.389 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2019-01-08 11:41:11.331 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2019-01-08 11:41:11.364 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-01-08 11:41:11.433 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64ms. Found 8 repository interfaces.
+2019-01-08 11:41:11.718 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b938c81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-01-08 11:41:12.028 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8095 (http)
+2019-01-08 11:41:12.040 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-01-08 11:41:12.041 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.12
+2019-01-08 11:41:12.045 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;"C:\Program Files (x86)\Java\jdk1.8.0_144\bin;C:\Program Files (x86)\Java\jdk1.8.0_144\jre\bin;";D:\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Python27;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Fiddler;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jdk1.8.0_144\bin;D:\Tools\adb;;.]
+2019-01-08 11:41:12.202 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-01-08 11:41:12.203 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1751 ms
+2019-01-08 11:41:12.228 [main] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-01-08 11:41:12.230 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-01-08 11:41:12.231 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-01-08 11:41:12.231 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'formContentFilter' to: [/*]
+2019-01-08 11:41:12.231 [main] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-01-08 11:41:12.342 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-01-08 11:41:12.917 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-01-08 11:41:12.958 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-01-08 11:41:13.012 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+2019-01-08 11:41:13.013 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-01-08 11:41:13.154 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-01-08 11:41:13.272 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-01-08 11:41:13.887 [main] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-01-08 11:41:14.572 [main] WARN  o.s.b.a.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-01-08 11:41:14.787 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-01-08 11:41:14.899 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-01-08 11:41:14.934 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2019-01-08 11:41:14.953 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2019-01-08 11:41:14.963 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2019-01-08 11:41:15.151 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_1
+2019-01-08 11:41:15.154 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_2
+2019-01-08 11:41:15.160 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_3
+2019-01-08 11:41:15.164 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_4
+2019-01-08 11:41:15.168 [main] INFO  s.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: createUsertableUsingPOST_5
+2019-01-08 11:41:15.212 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8095 (http) with context path ''
+2019-01-08 11:41:15.214 [main] INFO  com.course.Application - Started Application in 5.274 seconds (JVM running for 6.749)

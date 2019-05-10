@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="测试类分组">
+    <test name="测试类分组">
+        <classes>
+            <class name="com.course.LearnTestNgCases.GroupsAndDataprovider.class111"/>
+            <class name="com.course.LearnTestNgCases.GroupsAndDataprovider.class222"/>
+        </classes>
+    </test>
+</suite>

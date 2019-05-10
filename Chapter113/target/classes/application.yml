@@ -1,0 +1,20 @@
+server:
+  port: 8084
+
+logging:
+  path: logs
+  file: mylog.log
+
+spring:
+  application:
+    name: mytest
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dbgirl?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: baoxian_admin
+
+mybatis:
+  type-aliases-package: com.course.model
+  mapper-locations:
+    - mapper/*

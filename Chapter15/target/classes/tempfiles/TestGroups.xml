@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="测试类分组">
+    <test name="测试类分组">
+        <groups>
+            <run>
+                <include name="student"/>
+                <include name="teacher"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.LearnTestNgCases.Groups.groupclass1"/>
+            <class name="com.course.LearnTestNgCases.Groups.groupclass2"/>
+            <class name="com.course.LearnTestNgCases.Groups.groupclass3"/>
+            <parameter name="name" value="qinzhenxia"/>
+            <parameter name="age" value="28"/>
+            <class name="com.course.LearnTestNgCases.paramters.Parametertest"/>
+        </classes>
+    </test>
+</suite>

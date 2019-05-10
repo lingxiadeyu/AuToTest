@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="学习testng的suite测试套件">
+    <test name="测试LoginTest类" >
+        <classes>
+            <class name="com.course.LearnTestNgCases.Suite.SuiteConfig"/>
+            <class name="com.course.LearnTestNgCases.Suite.LoginTest"/>
+            <class name="com.course.LearnTestNgCases.Suite.PayTest"/>
+        </classes>
+    </test>
+</suite>

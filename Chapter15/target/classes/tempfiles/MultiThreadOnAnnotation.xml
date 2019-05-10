@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="thread" parallel="tests" thread-count="3" >
+    <!--
+    parallel="methods"，methods级别，所有用例都可以在不同的线程中执行
+     thread-count：代表了最大并发线程数
+      xml文件配置这种方式不能指定线程池，只有方法上才可以指定线程池
+
+    parallel="classes"，classs级别：
+           相同的class tag 下的用例在同一个线程中执行
+           不同的class tag 下的用例可以在不同的线程中执行
+
+    parallel="tests"，tests级别：
+           相同的test tag 下的用例在同一个线程中执行
+           不同的test tag 下的用例可以在不同的线程中执行
+    -->
+    <test name="testthread">
+        <classes name="demo1">
+            <class name="com.course.LearnTestNgCases.MultiThread.MultiThreadOnXml"/>
+        </classes>
+
+    </test>
+    <test name="testthread2">
+        <classes name="demo2">
+            <class name="com.course.LearnTestNgCases.MultiThread.MultiThreadOnXmltwo"/>
+        </classes>
+
+    </test>
+</suite>

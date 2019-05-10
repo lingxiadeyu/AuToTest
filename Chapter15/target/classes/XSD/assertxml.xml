@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <mail mailName="邮件客户端" mailDescription="打开本地邮件客户端发送邮件" >
+        <mailServer sp="163" >
+            <pop3 key="ip" value="192.168.1.1" />
+            <pop3 key="port" value="1234" />
+            <user key="userName" value="abcduser" />
+            <user key="password" value="dfdf" />
+        </mailServer>
+    </mail>
+</root>

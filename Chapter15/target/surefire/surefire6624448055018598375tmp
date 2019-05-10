@@ -1,0 +1,5 @@
+#surefire
+#Mon Jan 07 16:41:09 CST 2019
+user.dir=D\:\\Springboot\\AutoTest\\Chapter15
+localRepository=D\:\\apache-maven-3.5.3\\localRepository_tx
+basedir=D\:\\Springboot\\AutoTest\\Chapter15

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.course">
+    <!--查询数据库表，因为查询的是count(*)所以返回的结果类型是Integer-->
+        <select id="getUserCount" resultType="Integer">
+            select count(*) from dbgirl.girls;
+        </select>
+    <!--添加数据库表，因为添加的是实体类的具体参数值，所以要传参实体类，parameterType是传参类型，insert成功后直接返回0，所以不需要设置返回类型-->
+    <insert id="addUserUseMybatis" parameterType="com.course.model.Girls">
+        insert into girls(id,age,cupsize)
+        values (#{id},#{age},#{cupsize})
+    </insert>
+    <!--更新数据库表，因为添加的是实体类的具体参数值，所以要传参实体类，parameterType是传参类型，update成功后直接返回0，所以不需要设置返回类型-->
+    <update id="updataUsers" parameterType="com.course.model.Girls">
+    update girls set age=#{age},cupsize=#{cupsize}
+    where id=#{id}
+    </update>
+    <!--删除数据库表内容，没有返回类型，入参为整型-->
+    <delete id="deleteUsers" parameterType="Integer">
+    delete from girls where id=#{id}
+    </delete>
+    <update id="createTemplate" parameterType="string">
+        CREATE TABLE #{userlist} (
+        `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+        `DataBB` varchar(20) DEFAULT NULL,
+        `DataPP` varchar(20) DEFAULT NULL,
+        PRIMARY KEY (`id`)
+        )ENGINE=InnoDB AUTO_INCREMENT=43 DEFAULT CHARSET=utf8;
+    </update>
+</mapper>

@@ -1,0 +1,536 @@
+[
+  {
+    "description": "测试moco服务正常",
+    "request": {
+      "uri": "/dotest",
+      "method": "get"
+    },
+    "response": {
+      "json": {
+        "result": "测试成功"
+      }
+    }
+  },
+  {
+    "description":"返回json接口",
+    "request":{
+      "uri":"/lotto",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "lotto":{
+          "lottoId":5,
+          "winning-numbers":[2,45,34,23,7,5,3],
+          "winners":[{
+            "winnerId":23,
+            "numbers":[2,45,34,23,3,5]
+          },{
+            "winnerId":54,
+            "numbers":[52,3,12,11,18,22]
+          }]
+        }
+      }
+    }
+  },
+  {
+    "description":"以BigDecimal返回float和double类型",
+    "request":{
+      "uri":"/price",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "price":12.122222
+      }
+    }
+  },
+  {
+    "description":"匿名的根节点测试",
+    "request":{
+      "uri":"/json",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "name":"1,2,3"
+      }
+    }
+    },
+  {
+    "description":"返回内容是xml",
+    "request":{
+      "uri":"/getxml",
+      "method":"post",
+      "forms":{
+        "firstName":"John",
+        "lastName":"Doe"
+      }
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" ?> <greeting>\n<firstName>John</firstName>\n<lastName>Doe</lastName>\n</greeting>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+
+    }
+    },
+  {
+    "description":"返回内容是xml，入参类型是json",
+    "request":{
+      "uri":"/getxmlwithjson",
+      "method":"post",
+      "json":{
+        "firstName":"John",
+        "lastName":"Doe"
+      }
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" ?> <greeting>\n<firstName>John</firstName>\n<lastName>Doe</lastName>\n</greeting>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+    }
+  },
+  {
+    "description":"返回内容是xml",
+    "request":{
+      "uri":"/getxmlwithnamespace",
+      "method":"get"
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" ?> <foo xmlns:ns=\"http://localhost/\">\n<bar>sudo </bar>\n<ns:bar>make me a sandwich!</ns:bar>\n</foo>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+    }
+  },
+  {
+    "description":"返回内容是xml",
+    "request":{
+      "uri":"/getxmlwithnamespacetwo",
+      "method":"get"
+    },
+    "response":{
+      "text":"<h:table xmlns:h=\"http://www.w3.org/TR/html4/\">\n <h:tr>\n<h:td>Apples</h:td>\n<h:td>Bananas</h:td>\n</h:tr>\n</h:table>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+    }
+  },
+  {
+    "description":"模拟返回内容是xml文件,生成XSD后校验xsd内容",
+    "request" :
+    {
+      "uri":"/getresponsewithfile",
+      "method":"get"
+    },
+    "response" :
+    {
+      "file" : "D:/Springboot/AutoTest/Chapter15/src/main/resources/XSD/assertxml.xml"
+    }
+  },
+  {
+    "description":"模拟返回内容是文件",
+    "request" :
+    {
+      "uri":"/getresponsewithDTDfile",
+      "method":"get"
+    },
+    "response" :
+    {
+      "file" : "D:/Springboot/AutoTest/Chapter15/src/main/resources/databaseConfig.xml"
+    }
+  },
+  {
+    "description":"复杂的验证",
+    "request":{
+      "uri":"/getfindall",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "p2pdata":{
+          "data":[{
+            "words":"ant"
+          },{
+            "words":"buffalo"
+          },{
+            "words":"cat"
+          },{
+            "words":"dinosaur"
+          }]
+        }
+      }
+    }
+  },
+  {
+    "description":"返回内容是xml",
+    "request":{
+      "uri":"/assertxmlresponse",
+      "method":"get"
+    },
+    "response":{
+      "text":"<shopping>\n<category type=\"groceries\">\n<item>Chocolate</item>\n<item>Coffee</item>\n</category>\n<category type=\"supplies\">\n<item>Paper</item>\n<item quantity=\"4\">Pens</item>\n</category>\n<category type=\"present\">\n<item when=\"Aug 10\">Kathryn's Birthday</item>\n</category>\n</shopping>",
+      "headers":{
+        "Content-Type":"text/xml"
+      }
+    }
+  },
+  {
+    "description":"返回内容是json",
+    "request":{
+      "uri":"/assertjsonresponse",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+
+    "store":{
+      "book":[
+        {
+          "author":"Nigel Rees",
+          "category":"reference",
+          "price":8.95,
+          "title":"Sayings of the Century"
+        },
+        {
+          "author":"Evelyn Waugh",
+          "category":"fiction",
+          "price":12.99,
+          "title":"Sword of Honour"
+        },
+        {
+          "author":"Herman Melville",
+          "category":"fiction",
+          "isbn":"0-553-21311-3",
+          "price":8.99,
+          "title":"Moby Dick"
+        },
+        {
+          "author":"J. R. R. Tolkien",
+          "category":"fiction",
+          "isbn":"0-395-19395-8",
+          "price":22.99,
+          "title":"The Lord of the Rings"
+        }
+      ]
+    }
+  }
+
+    }
+  },
+  {
+    "description":"返回内容是float",
+    "request":{
+      "uri":"/assertfloatresponse",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "price":12.12
+      }
+
+    }
+  },
+  {
+    "description":"验证and",
+    "request":{
+      "uri":"/assertandrequest",
+      "method":"get",
+      "headers":{
+        "token":"1234567890"
+      },
+      "queries":{
+        "name":"qinzhenxia"
+      }
+    },
+    "response":{
+      "json":{
+        "price":"12"
+      }
+
+    }
+  },
+  {
+    "description":"验证从response中提取内容",
+    "request":{
+      "uri":"/getpath",
+      "method":"get",
+      "headers":{
+        "token":"1234567890"
+      },
+      "queries":{
+        "name":"qinzhenxia"
+      }
+    },
+    "response":{
+      "headers":{
+        "token":"0987654321"
+      },
+      "json":{
+        "title" : "My Title",
+        "_links": {
+          "self": { "href": "/title" },
+          "next": { "href": "http://www.baidu.com" }
+        }
+
+      }
+
+    }
+  },
+  {
+    "description":"验证从response中提取内容",
+    "request":{
+      "uri":"/getheadersAndCookies",
+      "method":"get",
+      "headers":{
+        "token":"1234567890",
+        "otherheader":"1111111111"
+      },
+      "queries":{
+        "name":"qinzhenxia"
+      }
+    },
+    "response":{
+      "status":200,
+      "cookies":{
+        "xintai_ucenter_sso":"UCENTER-ad78845d-0277-4384-8759-8ceee5ecaf0a"
+      },
+      "headers":{
+        "token":"0987654321",
+        "otherheader":"22222222222"
+      },
+      "json":{
+        "title" : "My Title",
+        "_links": {
+          "self": { "href": "/title" },
+          "next": { "href": "http://www.baidu.com" }
+        }
+
+      }
+
+    }
+  },
+  {
+    "description":"验证从response中提取内容",
+    "request":{
+      "uri":"/testing/getheadersAndCookies",
+      "method":"get",
+      "cookies":{
+        "token":"1234567890",
+        "otherheader":"1111111111"
+      },
+      "queries":{
+        "name":"qinzhenxia"
+      }
+    },
+    "response":{
+      "status":200,
+      "cookies":{
+        "xintai_ucenter_sso":"UCENTER-ad78845d-0277-4384-8759-8ceee5ecaf0a"
+      },
+      "headers":{
+        "token":"0987654321",
+        "otherheader":"22222222222"
+      },
+      "json":{
+        "title" : "My Title",
+        "_links": {
+          "self": { "href": "/title" },
+          "next": { "href": "http://www.baidu.com" }
+        }
+
+      }
+
+    }
+  },
+  {
+    "description":"验证从response中提取内容",
+    "request":{
+      "uri":"/testing/getCookies",
+      "method":"get",
+      "cookies":{
+        "token":"1234567890"
+      },
+      "queries":{
+        "name":"qinzhenxia"
+      }
+    },
+    "response":{
+      "status":200,
+      "cookies":{
+        "xintai_ucenter_sso":"UCENTER-ad78845d-0277-4384-8759-8ceee5ecaf0a"
+      },
+      "headers":{
+        "token":"0987654321",
+        "otherheader":"22222222222"
+      },
+      "json":{
+        "title" : "My Title",
+        "_links": {
+          "self": { "href": "/title" },
+          "next": { "href": "http://www.baidu.com" }
+        }
+
+      }
+
+    }
+  },
+  {
+    "description":"验证从response中提取内容",
+    "request":{
+      "uri":"/testing/getmoreCookies",
+      "method":"get",
+      "cookies":{
+        "token":"1234567890",
+        "tokentwo":"77777"
+      },
+      "queries":{
+        "name":"qinzhenxia"
+      }
+    },
+    "response":{
+      "status":200,
+      "cookies":{
+        "xintai_ucenter_sso":"UCENTER-ad78845d-0277-4384-8759-8ceee5ecaf0a"
+      },
+      "headers":{
+        "token":"0987654321",
+        "otherheader":"22222222222"
+      },
+      "json":{
+        "title" : "My Title",
+        "_links": {
+          "self": { "href": "/title" },
+          "next": { "href": "http://www.baidu.com" }
+        }
+
+      }
+
+    }
+  },
+  {
+    "description":"关联型验证",
+    "request":{
+      "uri":"/getuserid",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "userId" : "some-id",
+        "href" : "http://localhost:8080/some-id"
+      }
+    }
+  },
+  {
+    "description":"对象映射",
+    "request":{
+      "uri":"/testlogincase",
+      "method":"post",
+        "json":{
+          "username":"秦振霞",
+          "password":"123456"
+      }
+    },
+    "response":{
+      "json":{
+        "message":"hello,girl!"
+      }
+    }
+  },
+  {
+    "description":"对象映射",
+    "request":{
+      "uri":"/testlogincaseform",
+      "method":"post",
+      "forms":{
+        "username":"秦振霞",
+        "password":"123456"
+      }
+    },
+    "response":{
+      "json":{
+        "message":"hello,girl!"
+      }
+    }
+  },
+  {
+    "description":"对象映射--反序列",
+    "request":{
+      "uri":"/getjavaobject",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "username":"秦振霞",
+        "password":"123456"
+      }
+    }
+  },
+  {
+    "description":"对象映射--反序列，返回xml",
+    "request":{
+      "uri":"/getjavaxmlobject",
+      "method":"get"
+    },
+    "response":{
+      "text":"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<LoginDATA>\n<username>秦振霞</username>\n<password>123456</password>\n</LoginDATA>",
+      "headers":{
+        "Content-Type":"application/something"
+      }
+
+    }
+
+  },
+  {
+    "description":"模式复用",
+    "request":{
+      "uri":"/testspec",
+      "method":"post",
+      "headers":{
+        "token":"1234567890"
+      },
+      "forms":{
+        "username":"秦振霞",
+        "password":"123456"
+      }
+    },
+    "response":{
+      "json":{
+        "message":"hello,girl!"
+      }
+    }
+  },
+  {
+    "description":"路径参数",
+    "request":{
+      "uri":"/testroot",
+      "method":"get"
+    },
+    "response":{
+      "json":{
+        "p2pdata":{
+          "body":{
+            "firstname":"zhenxia",
+            "lastname":"qin",
+            "family":{
+              "one":"daddy",
+              "two":"mother"
+            }
+          },
+          "des":"happy family"
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+]

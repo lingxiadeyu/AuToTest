@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="root">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="mail"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mail">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="mailServer"/>
+            </xs:sequence>
+            <xs:attribute name="mailDescription" use="required" type="xs:NCName"/>
+            <xs:attribute name="mailName" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="mailServer">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="pop3"/>
+                <xs:element maxOccurs="unbounded" ref="user"/>
+            </xs:sequence>
+            <xs:attribute name="sp" use="required" type="xs:integer"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pop3">
+        <xs:complexType>
+            <xs:attribute name="key" use="required" type="xs:NCName"/>
+            <xs:attribute name="value" use="required" type="xs:NMTOKEN"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="user">
+        <xs:complexType>
+            <xs:attribute name="key" use="required" type="xs:NCName"/>
+            <xs:attribute name="value" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
